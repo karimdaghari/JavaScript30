@@ -4,7 +4,7 @@ While my initial focus is on bettering my understanding of (front-end) JS (and c
 # Notes
 On this section I'll include notes I've taken from each lesson.
 
-1. [Drum Kit](/01 - Drum Kit/notes.md)
+1. [Drum Kit](/01%20-%20Drum%20Kit/notes.md)
 2. [JS and CSS Clock](#)
 3. [CSS Variables](#)
 4. [Array Cardio Day 1](#)
