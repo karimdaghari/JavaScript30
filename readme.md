@@ -1,6 +1,13 @@
 # Intro
 While my initial focus is on bettering my understanding of (front-end) JS (and consequentially honing my skills), at the same time I'm also interested in applying my Git learning. So, this is my first bite at it, at GitHub *and* at Markdown.
 
+# Objective
+- [x] Start 😃
+- [] Getting Started: **9/30** projects done by **30/05** 💪
+- [] Starting **31/05**, do *at least* 2 projects per day 🤞
+- [] Halfway there: **15/30** projects done by **2/06** 💪💪
+- [] Finish all the mini-projects by **10/06** 🎉
+
 # Notes
 On this section I'll include notes I've taken from each lesson.
 
