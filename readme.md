@@ -2,7 +2,7 @@
 While my initial focus is on bettering my understanding of (front-end) JS (and consequentially honing my skills), at the same time I'm also interested in applying my Git learning. So, this is my first bite at it, at GitHub *and* at Markdown.
 
 # Objective
-- [x] Start 😃
+- [x] Start 👍
 - [ ] Getting Started: **9/30** projects done by **30/05** 🥉💪
 - [ ] Halfway there: **15/30** projects done by **2/06** 🥈💪
 - [ ] Finish all the mini-projects by **10/06** 🥇🎉
@@ -12,7 +12,7 @@ While my initial focus is on bettering my understanding of (front-end) JS (and c
 Included below are links to bullet points of new stuff *I* learned from each project. (WIP)
 
 1. [Drum Kit](/01%20-%20Drum%20Kit/readme.md) ✔️
-2. [JS and CSS Clock](/02%20-%20JS%20and%20CSS%20Clock/readme.md)
+2. [JS and CSS Clock](/02%20-%20JS%20and%20CSS%20Clock/readme.md) ✔️
 3. [CSS Variables](/03%20-%20CSS%20Variables/readme.md)
 4. [Array Cardio Day 1](/04%20-%20Array%20Cardio%20Day%201/readme.md)
 5. [Flex Panel Gallery](/05%20-%20Flex%20Panel%20Gallery/readme.md)
