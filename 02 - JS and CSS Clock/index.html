@@ -17,6 +17,9 @@
     </div>
   </div>
 
+  <div>
+    <p><span class="time"></span></p>
+  </div>
 
   <style>
     html {
@@ -75,40 +78,36 @@
       background-color: red;
       height: 2px;
     }
+
+    .min-hand {
+      background: chartreuse;
+    }
+
+    .hour-hand {
+      width: 40%;
+      left: 10%;
+    }
   </style>
 
   <script>
-    const secondHand = document.querySelector('.second-hand'),
-      minHand = document.querySelector('.min-hand'),
-      hourHand = document.querySelector('.hour-hand');
+    const hand = (h) => document.querySelector(`.${h}-hand`);
 
-    function setSeconds() {
-      const date = new Date();
-      const seconds = date.getSeconds();
-      const degree = (((seconds / 60) * 360) + 90) % 360;
+    function setDate() {
+      const date = new Date(),
+        seconds = date.getSeconds(),
+        minutes = date.getMinutes(),
+        hour = date.getHours() - 1;
 
-      secondHand.style.transform = `rotate(${degree}deg)`;
+      const degree = (time, div = 60) => (((time / div) * 360) + 90) % 360;
+
+      hand('second').style.transform = `rotate(${degree(seconds)}deg)`;
+      hand('min').style.transform = `rotate(${degree(minutes)}deg)`;
+      hand('hour').style.transform = `rotate(${degree(hour, 12)}deg)`;
+
+      // We divide hour by 12 because in a normal clock there's only 1->12. 
     }
 
-    function setMinutes() {
-      const date = new Date();
-      const Minutes = date.getMinutes();
-      const degree = (((Minutes / 60) * 360) + 90) % 360;
-
-      minHand.style.transform = `rotate(${degree}deg)`;
-    }
-
-    function setHours() {
-      const date = new Date();
-      const Hour = date.getHours() - 1;
-      const degree = (((Hour / 24) * 360) + 90) % 360;
-
-      hourHand.style.transform = `rotate(${degree}deg)`;
-    }
-
-    setInterval(setSeconds, 1000);
-    setInterval(setMinutes, 1000);
-    setInterval(setHours, 1000);
+    setInterval(setDate, 1000);
 
   </script>
 </body>
