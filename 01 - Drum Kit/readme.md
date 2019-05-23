@@ -1,4 +1,3 @@
-# What I learned:
 * The HTML5 attribute ``` data-{whatever}``` is for creating user-defined attributes.
   * Relevant bit: 
   ```html
