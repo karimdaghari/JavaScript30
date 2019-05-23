@@ -4,7 +4,6 @@ While my initial focus is on bettering my understanding of (front-end) JS (and c
 # Objective
 - [x] Start 😃
 - [ ] Getting Started: **9/30** projects done by **30/05** 🥉💪
-- [ ] Starting **31/05**, do *at least* 2 projects per day 🤞
 - [ ] Halfway there: **15/30** projects done by **2/06** 🥈💪
 - [ ] Finish all the mini-projects by **10/06** 🥇🎉
 - [ ] Stretch Goal: Finish by **7/06** 🏆🔥
