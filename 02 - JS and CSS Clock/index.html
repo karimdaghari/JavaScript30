@@ -101,7 +101,7 @@
     function setHours() {
       const date = new Date();
       const Hour = date.getHours() - 1;
-      const degree = (((Hour / 60) * 360) + 90) % 360;
+      const degree = (((Hour / 24) * 360) + 90) % 360;
 
       hourHand.style.transform = `rotate(${degree}deg)`;
     }
