@@ -11,9 +11,9 @@ While my initial focus is on bettering my understanding of (front-end) JS (and c
 # Notes
 Included below are links to bullet points of new stuff *I* learned from each project. (WIP)
 
-1. [Drum Kit](/01%20-%20Drum%20Kit/readme.md)✔️
-2. [JS and CSS Clock](/02%20-%20JS%20and%20CSS%20Clock/readme.md)✔️
-3. [CSS Variables](/03%20-%20CSS%20Variables/readme.md)✔️
+1. [Drum Kit](/01%20-%20Drum%20Kit/readme.md) ✔️
+2. [JS and CSS Clock](/02%20-%20JS%20and%20CSS%20Clock/readme.md) ✔️
+3. [CSS Variables](/03%20-%20CSS%20Variables/readme.md) ✔️
 4. [Array Cardio Day 1](/04%20-%20Array%20Cardio%20Day%201/readme.md)
 5. [Flex Panel Gallery](/05%20-%20Flex%20Panel%20Gallery/readme.md)
 6. [Type Ahead](/06%20-%20Type%20Ahead/readme.md)
