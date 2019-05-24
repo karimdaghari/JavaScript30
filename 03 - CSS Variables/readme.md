@@ -1,0 +1,1 @@
+* The difference between a NodeList and an Array object ? The methods available.
