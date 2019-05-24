@@ -14,10 +14,10 @@ Included below are links to bullet points of new stuff *I* learned from each pro
 1. [Drum Kit](/01%20-%20Drum%20Kit/readme.md) ✅
    *  ` data-{whatever}`: Create user-defined attributes
    *  `transitionend` event: Fired when a CSS transition has completed
-   *  `classList`: Returns all classes attached to element.
-   *  `<audio>`: `audio.currentTime` and `audio.play()`.
+   *  `classList`: Returns all classes attached to element
+   *  `<audio>`: `audio.currentTime` and `audio.play()`
 2. [JS and CSS Clock](/02%20-%20JS%20and%20CSS%20Clock/readme.md) ✅
-   * ``selector.style.cssAttribute = `value`;``
+   * `selector.style.cssAttribute = value`: Directly set `cssAttribute`'s value
    * A *method* cannot be passed as a parameter in JS
 3. [CSS Variables](/03%20-%20CSS%20Variables/readme.md) ✅
    * CSS Variables: `--varName: value;` (Declaration) and `var(--varName);` (Usage)
