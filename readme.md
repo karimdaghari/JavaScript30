@@ -12,14 +12,24 @@ While my initial focus is on bettering my understanding of (front-end) JS (and c
 Included below are links to bullet points of new stuff *I* learned from each project. (WIP)
 
 1. [Drum Kit](/01%20-%20Drum%20Kit/readme.md) ✅
+   *  ` data-{whatever}`: Create user-defined attributes
+   *  `transitionend` event: Fired when a CSS transition has completed
+   *  `classList`: Returns all classes attached to element.
+   *  `<audio>`: `audio.currentTime` and `audio.play()`.
 2. [JS and CSS Clock](/02%20-%20JS%20and%20CSS%20Clock/readme.md) ✅
+   * ``selector.style.cssAttribute = `value`;``
+   * A *method* cannot be passed as a parameter in JS
 3. [CSS Variables](/03%20-%20CSS%20Variables/readme.md) ✅
+   * CSS Variables: `--varName: value;` (Declaration) and `var(--varName);` (Usage)
+   * The diff between `NodeList` and `Array`: More methods
+   * Short-circuit evaluation
+   * `Document.documentElement`: Always returns `<html>` element
 4. [Array Cardio Day 1](/04%20-%20Array%20Cardio%20Day%201/readme.md)
 5. [Flex Panel Gallery](/05%20-%20Flex%20Panel%20Gallery/readme.md)
 6. [Type Ahead](/06%20-%20Type%20Ahead/readme.md)
 7. [Array Cardio Day 2](/07%20-%20Array%20Cardio%20Day%202/readme.md)
 8. [Fun with HTML5 Canvas](/08%20-%20Fun%20with%20HTML5%20Canvas/readme.md)
-9. [Dev Tools Domination](/09%20-%20Dev%20Tools%20Domination/readme.md)
+9.  [Dev Tools Domination](/09%20-%20Dev%20Tools%20Domination/readme.md)
 10. [Hold Shit and Checkboxes](/10%20-%20Hold%20Shit%20and%20Checkboxes/readme.md)
 11. [Custom Video Player](/11%20-%20Custom%20Video%20Player/readme.md)
 12. [Key Sequence Detection](/12%20-%20Key%20Sequence%20Detection/readme.md)
