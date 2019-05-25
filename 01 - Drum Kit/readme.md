@@ -6,7 +6,7 @@
   </div> 
   ```
 
-* The `<kbd>` element: which denotates a user keyboard input.
+* The `<kbd>` element: denotates a user keyboard input.
   * Relevant bit:
   ```html
   <kbd> ... </kbd>
