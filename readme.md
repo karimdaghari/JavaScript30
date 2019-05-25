@@ -26,7 +26,7 @@ Included below are links to bullet points of new stuff *I* learned from each pro
    * `Document.documentElement`: Always returns `<html>` element
 4. [Array Cardio Day 1](/04%20-%20Array%20Cardio%20Day%201/readme.md) ✅
    * One-liner arrow functions have an implicit `return`
-   * ALWAYS PUT AN `INITIAL` VALUE in a `reduce` function
+   * ⚠️ Always put an `initial` value in a `reduce` function: to avoid headaches
 5. [Flex Panel Gallery](/05%20-%20Flex%20Panel%20Gallery/readme.md)
 6. [Type Ahead](/06%20-%20Type%20Ahead/readme.md)
 7. [Array Cardio Day 2](/07%20-%20Array%20Cardio%20Day%202/readme.md)
