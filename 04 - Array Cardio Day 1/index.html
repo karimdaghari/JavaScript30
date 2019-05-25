@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Array Cardio 💪</title>
 </head>
+
 <body>
   <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
   <script>
@@ -31,29 +33,66 @@
 
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
+    const inventors15 = inventors.filter(({ year }) => year >= 1500 && year < 1600);
+
+    console.log("Inventors born in the 1500's:");
+    console.table(inventors15);
 
     // Array.prototype.map()
-    // 2. Give us an array of the inventors' first and last names
+    // 2. Give us an array of the inventors' first and last datums
+    const firstLast = inventors.map(({ first, last }) => `${first} ${last}`);
+
+    console.log("Inventors' first and last datums");
+    console.table(firstLast);
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+    inventors.sort((a, b) => a.year - b.year);
+
+    console.log("inventors sorted by birthdate, from oldest to youngest");
+    console.table(inventors);
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
+    const yearsLived = inventors.reduce((acc, curr) => {
+      acc + (curr.passed - curr.year);
+    }, 0);
 
-    // 5. Sort the inventors by years lived
+    console.log(`Total years lived: ${yearsLived}`);
 
-    // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+    // 5. Sort the inventors by years lived (least to most):
+    inventors.sort((a, b) => (b.passed - b.year) - (a.passed - a.year));
+
+    console.log("Inventors sorted by years lived:");
+    console.table(inventors);
+
+    // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the datum
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-
+    // boulevards.filter(boulevard => boulevard.includes('de'));
 
     // 7. sort Exercise
-    // Sort the people alphabetically by last name
+    // Sort the people alphabetically by last datum
+    people.sort();
 
+    console.log("People, sorted alphabetically by last datum:");
+    console.table(people);
     // 8. Reduce Exercise
     // Sum up the instances of each of these
-    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
 
+    const summedUp = data.reduce(function (allData, datum) {
+      if (datum in allData) {
+        allData[datum]++;
+      }
+      else {
+        allData[datum] = 1;
+      }
+      return allData;
+    }, {});
+
+    console.log('Summed up data:');
+    console.table(summedUp);
   </script>
 </body>
+
 </html>
