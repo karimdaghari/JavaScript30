@@ -31,7 +31,8 @@ Included below are links to bullet points of new stuff *I* learned from each pro
    * The `this` you're thinking of should probably be inside a regular function
 6. [Type Ahead](/06%20-%20Type%20Ahead/readme.md) ✅
    * The spread operator `...`: *spreads* over an iterable object (i.e: string, array and object)
-7. [Array Cardio Day 2](/07%20-%20Array%20Cardio%20Day%202/readme.md)
+7. [Array Cardio Day 2](/07%20-%20Array%20Cardio%20Day%202/readme.md) ✅
+   * `every` is the opposite of `some`
 8. [Fun with HTML5 Canvas](/08%20-%20Fun%20with%20HTML5%20Canvas/readme.md)
 9.  [Dev Tools Domination](/09%20-%20Dev%20Tools%20Domination/readme.md)
 10. [Hold Shit and Checkboxes](/10%20-%20Hold%20Shit%20and%20Checkboxes/readme.md)
