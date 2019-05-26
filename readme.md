@@ -27,7 +27,8 @@ Included below are links to bullet points of new stuff *I* learned from each pro
 4. [Array Cardio Day 1](/04%20-%20Array%20Cardio%20Day%201/readme.md) ✅
    * One-liner arrow functions have an implicit `return`
    * ⚠️ Always put an `initial` value in a `reduce` function: to avoid headaches
-5. [Flex Panel Gallery](/05%20-%20Flex%20Panel%20Gallery/readme.md)
+5. [Flex Panel Gallery](/05%20-%20Flex%20Panel%20Gallery/readme.md) ✅
+   * The `this` you're thinking of should probably be inside a regular function
 6. [Type Ahead](/06%20-%20Type%20Ahead/readme.md)
 7. [Array Cardio Day 2](/07%20-%20Array%20Cardio%20Day%202/readme.md)
 8. [Fun with HTML5 Canvas](/08%20-%20Fun%20with%20HTML5%20Canvas/readme.md)
