@@ -7,10 +7,80 @@
 </head>
 
 <body>
-  <canvas id="draw" width="800" height="800"></canvas>
+  <canvas id="draw"></canvas>
   <script>
     const canvas = document.querySelector("#draw");
     const ctx = canvas.getContext('2d');
+
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth;
+
+    ctx.strokeStyle = '#BADA55';
+    /* Specifies the color, gradient or pattern
+    to use for border lines around shapes. */
+
+    ctx.lineJoin = 'round';
+    /* Specifies the style of joined lines:
+      More: https://devdocs.io/dom/canvasrenderingcontext2d/linejoin
+      (specifically: Comparison of line joins)
+    */
+
+    ctx.lineCap = 'round';
+    /* Specifies the style of how each individual line ends.
+      More: https://devdocs.io/dom/canvasrenderingcontext2d/linecap
+      (specifically: Comparison of line caps)
+    */
+
+    ctx.lineWidth = 100;
+    // Specifies the width of a line.
+
+    let [isDrawing, direction] = [false, true],
+      [lastX, lastY, hue] = [0, 0, 0];
+
+
+    function draw(e) {
+      if (!isDrawing) return;
+      ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+      /*
+        Remember: Young Guys Can Be Messey Rascals.
+        Separated by 60°. Starts at 60°.
+
+        h: Hue, the angle on the wheel color.
+        s: Saturation, the amount of gray
+        l: Lightness
+      */
+      ctx.beginPath(); // Creates a new (blank) path
+      ctx.moveTo(lastX, lastY); // Start from
+      ctx.lineTo(e.offsetX, e.offsetY); // Move to
+      ctx.stroke(); // Draws the actual path
+      [lastX, lastY] = [e.offsetX, e.offsetY];
+      /*
+        offset[X|Y]: the x|y coordinate,
+        the top-left edge of the windows being the origin
+      */
+      hue++;
+
+      if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+        direction = !direction;
+      }
+
+      if (direction) {
+        ctx.lineWidth++;
+      } else {
+        ctx.lineWidth--;
+      }
+    }
+
+    canvas.addEventListener('mousedown', (e) => {
+      isDrawing = true;
+      [lastX, lastY] = [e.offsetX, e.offsetY];
+    });
+
+    canvas.addEventListener('mousemove', draw);
+
+    // When the mouse is out of the window or isn't clicked we want to stop drawing
+    canvas.addEventListener('mouseup', () => isDrawing = false);
+    canvas.addEventListener('mouseout', () => isDrawing = false);
   </script>
 
   <style>
