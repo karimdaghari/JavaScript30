@@ -38,7 +38,7 @@ Included below are links to bullet points of new stuff *I* learned from each pro
 
 9.  [Dev Tools Domination](/09%20-%20Dev%20Tools%20Domination/readme.md) ✅
 10. [Hold Shift and Checkboxes](/10%20-%20Hold%20Shift%20and%20Checkboxes/readme.md) ✅
-   * This is so far the most frustrating exercise 
+   * This is was so far the most frustrating exercise
 11. [Custom Video Player](/11%20-%20Custom%20Video%20Player/readme.md)
 12. [Key Sequence Detection](/12%20-%20Key%20Sequence%20Detection/readme.md)
 13. [Slide in on Scroll](/13%20-%20Slide%20in%20on%20Scroll/readme.md)
