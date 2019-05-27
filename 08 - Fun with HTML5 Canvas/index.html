@@ -34,7 +34,7 @@
     ctx.lineWidth = 100;
     // Specifies the width of a line.
 
-    let [isDrawing, direction] = [false, true],
+    let [isDrawing, direction, isErasing] = [false, true, false],
       [lastX, lastY, hue] = [0, 0, 0];
 
 
@@ -71,16 +71,47 @@
       }
     }
 
-    canvas.addEventListener('mousedown', (e) => {
-      isDrawing = true;
+    function erase(e) {
+      if (!isErasing) return;
+      ctx.strokeStyle = 'white';
+
+      ctx.beginPath();
+      ctx.moveTo(lastX, lastY);
+      ctx.lineTo(e.offsetX, e.offsetY);
+      ctx.stroke();
       [lastX, lastY] = [e.offsetX, e.offsetY];
+
+      if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+        direction = !direction;
+      }
+
+      if (direction) {
+        ctx.lineWidth--;
+      } else {
+        ctx.lineWidth++;
+      }
+    }
+
+    canvas.addEventListener('mousedown', (e) => {
+      if (e.shiftKey) {
+        isErasing = true;
+      } else {
+        isDrawing = true;
+      }
+      [lastX, lastY] = [e.offsetX, e.offsetY];
+
     });
 
     canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mousemove', erase);
 
     // When the mouse is out of the window or isn't clicked we want to stop drawing
     canvas.addEventListener('mouseup', () => isDrawing = false);
     canvas.addEventListener('mouseout', () => isDrawing = false);
+
+    canvas.addEventListener('mouseup', () => isErasing = false);
+    canvas.addEventListener('mouseout', () => isErasing = false);
+
   </script>
 
   <style>
