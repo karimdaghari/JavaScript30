@@ -40,7 +40,12 @@
 
     function draw(e) {
       if (!isDrawing) return;
-      ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+
+      if (isErasing) {
+        ctx.strokeStyle = 'white';
+      } else {
+        ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+      }
       /*
         Remember: Young Guys Can Be Messy Rascals.
         Separated by 60°. Starts at 60°.
@@ -58,59 +63,35 @@
         offset[X|Y]: the x|y coordinate,
         the top-left edge of the windows being the origin
       */
-      hue++;
+      if (!isErasing) {
+        hue++;
+      }
 
       if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
         direction = !direction;
       }
 
       if (direction) {
-        ctx.lineWidth++;
+        isErasing ? ctx.lineWidth-- : ctx.lineWidth++;
       } else {
-        ctx.lineWidth--;
-      }
-    }
-
-    function erase(e) {
-      if (!isErasing) return;
-      ctx.strokeStyle = 'white';
-
-      ctx.beginPath();
-      ctx.moveTo(lastX, lastY);
-      ctx.lineTo(e.offsetX, e.offsetY);
-      ctx.stroke();
-      [lastX, lastY] = [e.offsetX, e.offsetY];
-
-      if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
-        direction = !direction;
-      }
-
-      if (direction) {
-        ctx.lineWidth--;
-      } else {
-        ctx.lineWidth++;
+        isErasing ? ctx.lineWidth++ : ctx.lineWidth--;
       }
     }
 
     canvas.addEventListener('mousedown', (e) => {
       if (e.shiftKey) {
         isErasing = true;
-      } else {
-        isDrawing = true;
       }
+      isDrawing = true;
       [lastX, lastY] = [e.offsetX, e.offsetY];
 
     });
 
     canvas.addEventListener('mousemove', draw);
-    canvas.addEventListener('mousemove', erase);
 
     // When the mouse is out of the window or isn't clicked we want to stop drawing
-    canvas.addEventListener('mouseup', () => isDrawing = false);
-    canvas.addEventListener('mouseout', () => isDrawing = false);
-
-    canvas.addEventListener('mouseup', () => isErasing = false);
-    canvas.addEventListener('mouseout', () => isErasing = false);
+    canvas.addEventListener('mouseup', () => isDrawing = isErasing = false);
+    canvas.addEventListener('mouseout', () => isDrawing = isErasing = false);
 
   </script>
 
