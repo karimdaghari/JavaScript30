@@ -33,7 +33,9 @@ Included below are links to bullet points of new stuff *I* learned from each pro
    * The spread operator `...`: *spreads* over an iterable object (i.e: string, array and object)
 7. [Array Cardio Day 2](/07%20-%20Array%20Cardio%20Day%202/readme.md) ✅
    * `every` is the opposite of `some`
-8. [Fun with HTML5 Canvas](/08%20-%20Fun%20with%20HTML5%20Canvas/readme.md)
+8. [Fun with HTML5 Canvas](/08%20-%20Fun%20with%20HTML5%20Canvas/readme.md) ✅
+   * HSL: 60 **Y**oung **G**uys **C**an **B**e **M**essy **R**ascals
+
 9.  [Dev Tools Domination](/09%20-%20Dev%20Tools%20Domination/readme.md)
 10. [Hold Shit and Checkboxes](/10%20-%20Hold%20Shit%20and%20Checkboxes/readme.md)
 11. [Custom Video Player](/11%20-%20Custom%20Video%20Player/readme.md)
