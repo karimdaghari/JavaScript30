@@ -7,6 +7,9 @@
 </head>
 
 <body>
+  <p style="text-align: center">To draw: left mouse button.<br>
+    To erase: <kbd>Shift</kbd> + left mouse button.
+  </p>
   <canvas id="draw"></canvas>
   <script>
     const canvas = document.querySelector("#draw");
@@ -79,6 +82,12 @@
     }
 
     canvas.addEventListener('mousedown', (e) => {
+      const para = document.querySelector('p');
+
+      if (para) {
+        para.remove();
+      }
+
       if (e.shiftKey) {
         isErasing = true;
       }
