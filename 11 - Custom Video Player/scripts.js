@@ -27,24 +27,40 @@ function skip() {
     video.currentTime += time;
 }
 
-function skipArrows(key) {
-    if (key.code === "ArrowRight") {
+function skipArrows(arrow) {
+    if (arrow.code === "ArrowRight") {
         video.currentTime += 25;
-    } else if (key.code === "ArrowLeft") {
+    } else if (arrow.code === "ArrowLeft") {
         video.currentTime += -10;
     }
 }
 
+function updateRange() {
+    video[this.name] = this.value;
+}
+
+function handleProgress() {
+    let percent = (video.currentTime / video.duration) * 100;
+    progressBar.style.flexBasis = `${percent}%`;
+}
+
 // Play/Pause when the 'video' is clicked
 video.addEventListener('click', togglePlay);
+video.addEventListener('keydown', (e) => e.code === "Space" && togglePlaySpace());
+
 
 // Play/Pause when the 'space bar' is pressed
 window.addEventListener('keydown', (e) => e.code === "Space" && togglePlaySpace());
+window.addEventListener('keydown', (e) => e.code === "Space" && updateButton());
 
 // Update the play/pause button display
 video.addEventListener('click', updateButton);
 toggle.addEventListener('click', updateButton);
-window.addEventListener('keydown', (e) => e.code === "Space" && updateButton());
+video.addEventListener('ended', () => {
+    toggle.textContent = '🔁';
+    video.currentTime = 0;
+});
+
 
 // Handle skip buttons
 // Directly: (by clicking on the buttons)
@@ -52,3 +68,9 @@ skipButtons.forEach(button => button.addEventListener('click', skip));
 
 // Indirectly: (by pressing on the left|right arrow)
 window.addEventListener('keydown', (e) => skipArrows(e));
+
+// Control volume and speed
+ranges.forEach(range => range.addEventListener('change', updateRange));
+
+// Update progress
+video.addEventListener('timeupdate', handleProgress);
