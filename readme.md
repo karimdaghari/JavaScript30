@@ -40,7 +40,7 @@ Included below are links to bullet points of new stuff *I* learned from each pro
     * This is was so far the most frustrating exercise
 11. [Custom Video Player](/11%20-%20Custom%20Video%20Player/readme.md) ✅
     * This was by far the most fun exercise ! Read the code.
-12. [Key Sequence Detection](/12%20-%20Key%20Sequence%20Detection/readme.md)
+12. [Key Sequence Detection](/12%20-%20Key%20Sequence%20Detection/readme.md) ✅
 13. [Slide in on Scroll](/13%20-%20Slide%20in%20on%20Scroll/readme.md)
 14. [reference VS Copying](/14%20-%20reference%20VS%20Copying/readme.md)
 15. [LocalStorage](/15%20-%20LocalStorage/readme.md)
