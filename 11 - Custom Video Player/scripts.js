@@ -6,7 +6,7 @@ const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
-let isPaused = true;
+let isPaused = true; // added the flag otherwise space bar control won't work
 
 function togglePlay() {
     this.paused ? video.play() : video.pause();
@@ -22,6 +22,11 @@ function updateButton() {
     toggle.textContent = isPaused ? '►' : '❚ ❚';
 }
 
+function skip() {
+    let time = Number(this.dataset.skip);
+    video.currentTime += time;
+}
+
 // Play/Pause when the 'video' is clicked
 video.addEventListener('click', togglePlay);
 
@@ -32,3 +37,16 @@ window.addEventListener('keydown', (e) => e.code === "Space" && togglePlaySpace(
 video.addEventListener('click', updateButton);
 toggle.addEventListener('click', updateButton);
 window.addEventListener('keydown', (e) => e.code === "Space" && updateButton());
+
+// Handle skip buttons
+// Directly: (by clicking on the buttons)
+skipButtons.forEach(button => button.addEventListener('click', skip));
+
+// Indirectly: (by pressing on the left|right arrow)
+window.addEventListener('keydown', (e) => {
+    if (e.code === "ArrowRight") {
+        video.currentTime += 25;
+    } else if (e.code === "ArrowLeft") {
+        video.currentTime += -10;
+    }
+});
