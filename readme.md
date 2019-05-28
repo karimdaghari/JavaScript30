@@ -35,7 +35,6 @@ Included below are links to bullet points of new stuff *I* learned from each pro
    * `every` is the opposite of `some`
 8. [Fun with HTML5 Canvas](/08%20-%20Fun%20with%20HTML5%20Canvas/readme.md) ✅
    * HSL: 60 **Y**oung **G**uys **C**an **B**e **M**essy **R**ascals
-
 9.  [Dev Tools Domination](/09%20-%20Dev%20Tools%20Domination/readme.md) ✅
 10. [Hold Shift and Checkboxes](/10%20-%20Hold%20Shift%20and%20Checkboxes/readme.md) ✅
    * This is was so far the most frustrating exercise
