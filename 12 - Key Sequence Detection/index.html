@@ -9,6 +9,21 @@
 
 <body>
   <script>
+    const secretCode = 'XO',
+      pressed = [];
+
+    function detectKeys(event) {
+      pressed.push(event.key);
+      console.log(pressed);
+      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+
+      if (pressed.join('') === secretCode) {
+        console.log('%c 🤙', 'font-size: 100px');
+
+      }
+    }
+
+    document.addEventListener('keydown', detectKeys);
   </script>
 </body>
 
