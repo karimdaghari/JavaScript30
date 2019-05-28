@@ -72,6 +72,20 @@ function scrub(e) {
     video.currentTime = scrubTime;
 }
 
+function toggleFullScreen(e) {
+    if (e.key !== 'f') {
+        return;
+    }
+    if (!document.fullscreenElement) {
+        video.requestFullscreen().catch(err => {
+            alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+    }
+    else {
+        document.exitFullscreen();
+    }
+}
+
 // Play/Pause when the 'video' is clicked
 video.addEventListener('click', togglePlay);
 video.addEventListener('keydown', (e) => e.code === "Space" && togglePlaySpace());
@@ -108,3 +122,6 @@ progress.addEventListener('click', scrub);
 progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
+
+// Display video in full screen:
+window.addEventListener('keydown', toggleFullScreen);
