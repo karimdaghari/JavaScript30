@@ -27,6 +27,14 @@ function skip() {
     video.currentTime += time;
 }
 
+function skipArrows(key) {
+    if (key.code === "ArrowRight") {
+        video.currentTime += 25;
+    } else if (key.code === "ArrowLeft") {
+        video.currentTime += -10;
+    }
+}
+
 // Play/Pause when the 'video' is clicked
 video.addEventListener('click', togglePlay);
 
@@ -43,10 +51,4 @@ window.addEventListener('keydown', (e) => e.code === "Space" && updateButton());
 skipButtons.forEach(button => button.addEventListener('click', skip));
 
 // Indirectly: (by pressing on the left|right arrow)
-window.addEventListener('keydown', (e) => {
-    if (e.code === "ArrowRight") {
-        video.currentTime += 25;
-    } else if (e.code === "ArrowLeft") {
-        video.currentTime += -10;
-    }
-});
+window.addEventListener('keydown', (e) => skipArrows(e));
