@@ -42,7 +42,8 @@ Included below are links to bullet points of new stuff *I* learned from each pro
     * This was by far the most fun exercise ! Read the code.
 12. [Key Sequence Detection](/12%20-%20Key%20Sequence%20Detection/readme.md) ✅
 13. [Slide in on Scroll](/13%20-%20Slide%20in%20on%20Scroll/readme.md) ✅
-14. [reference VS Copying](/14%20-%20reference%20VS%20Copying/readme.md)
+14. [reference VS Copying](/14%20-%20reference%20VS%20Copying/readme.md) ✅
+    * JS is pass-by-value. Mostly.
 15. [LocalStorage](/15%20-%20LocalStorage/readme.md)
 16. [Mouse Move Shadow](/16%20-%20Mouse%20Move%20Shadow/readme.md)
 17. [Sort Without Articles](/17%20-%20Sort%20Without%20Articles/readme.md)
