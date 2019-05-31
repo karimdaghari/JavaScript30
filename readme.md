@@ -11,7 +11,7 @@ While my initial focus is on bettering my understanding of (front-end) JS (and c
 ### ❗️️ ️Update
 Due to time constraints and (positive) change of circumstances, I decided to:
 1. Postpone the remaining objectives
-2. Do projects I deem to be worthy by **01/06**
+2. Do projects I deem worthy by **01/06**
 
 # ✍️ Notes
 Included below are links to bullet points of new stuff **I** learned from each project. (WIP)
