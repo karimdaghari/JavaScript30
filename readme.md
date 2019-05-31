@@ -1,15 +1,20 @@
-# Intro
+# 🤓 Intro
 While my initial focus is on bettering my understanding of (front-end) JS (and consequentially honing my skills), at the same time I'm also interested in applying my Git learning. So, this is my first bite at it, at GitHub *and* at Markdown.
 
-# Objective
+# 🌠 Objectives
 - [x] Start 👍
 - [x] Getting Started: **9/30** projects done by ~~30/05~~ **27/05**  🥉💪
 - [x] Halfway there: **15/30** projects done by ~~**2/06**~~ **31/05** 🥈💪
-- [ ] Finish all the mini-projects by **10/06** 🥇🎉
-- [ ] Stretch Goal: Finish by **7/06** 🏆🔥
+- [ ] ~~Finish all the mini-projects by **10/06** 🥇🎉~~
+- [ ] ~~Stretch Goal: Finish by **7/06** 🏆🔥~~
 
-# Notes
-Included below are links to bullet points of new stuff *I* learned from each project. (WIP)
+### ❗️️ ️Update
+Due to time constraints and (positive) change of circumstances, I decided to:
+1. Postpone the remaining objectives
+2. Do projects I deem to be worthy by **01/06**
+
+# ✍️ Notes
+Included below are links to bullet points of new stuff **I** learned from each project. (WIP)
 
 1. [Drum Kit](/01%20-%20Drum%20Kit/readme.md) ✅
    *  ` data-{whatever}`: Create user-defined attributes
