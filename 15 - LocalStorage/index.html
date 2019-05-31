@@ -87,6 +87,7 @@
       const index = target.dataset.index;
       console.log(index);
       items[index].done = !items[index].done;
+      localStorage.setItem('items', JSON.stringify(items));
     }
 
     addItems.addEventListener('submit', addItem);
