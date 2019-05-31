@@ -45,7 +45,8 @@
   <script>
     const addItems = document.querySelector('.add-items');
     const itemsList = document.querySelector('.plates');
-    const items = [];
+    const items = JSON.parse(localStorage.getItem('items')) || [];
+    // ^ Here we're doing a short-circuit evaluation: We already have an array to parse (json --> js) [true] OR [false] we don't, so we create a new one.
 
     function addItem(e) {
       // The default action of a 'submit' event:
@@ -63,6 +64,7 @@
 
       items.push(item);
       displayList(items, itemsList);
+      localStorage.setItem('items', JSON.stringify(items));
     }
 
     function displayList(plates = [], platesList) {
@@ -90,6 +92,7 @@
     addItems.addEventListener('submit', addItem);
     itemsList.addEventListener('click', toggleDone);
 
+    displayList(items, itemsList);
   </script>
 
 
