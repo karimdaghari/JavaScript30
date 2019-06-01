@@ -10,8 +10,8 @@ While my initial focus is on bettering my understanding of (front-end) JS (and c
 
 ### ❗️️ ️Update
 Due to time constraints and (positive) change of circumstances, I decided to:
-1. Postpone the remaining objectives
-2. Do projects I deem worthy by **01/06**
+1. Postpone the remaining objectives ✅
+2. Do projects I deem worthy by **01/06** ✅
 
 # ✍️ Notes
 Included below are links to bullet points of new stuff **I** learned from each project. (WIP)
@@ -62,7 +62,9 @@ Included below are links to bullet points of new stuff **I** learned from each p
 22. [Follow Along Link Highlighter](/22%20-%20Follow%20Along%20Link%20Highlighter/readme.md)
 23. [Speech Synthesis](/23%20-%20Speech%20Synthesis/readme.md)
 24. [Sticky Nav](/24%20-%20Sticky%20Nav/readme.md)
-25. [Event Capture, Propagation, Bubbling and Once](/25%20-%20Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once/readme.md)
+25. [Event Capture, Propagation, Bubbling and Once](/25%20-%20Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once/readme.md) ✅
+    * Event capture: The browser reads the doc from top to bottom
+    * Propagation == Bubbling: The event *bubbles* up, it propagates
 26. [Stripe Follow Along Nav](/26%20-%20Stripe%20Follow%20Along%20Nav/readme.md)
 27. [Click and Drag](/27%20-%20Click%20and%20Drag/readme.md)
 28. [Video Speed Controller](/28%20-%20Video%20Speed%20Controller/readme.md)
